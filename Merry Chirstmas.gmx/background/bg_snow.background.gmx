@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1820</width>
-  <height>1024</height>
-  <data>images\Bg_star.png</data>
+  <width>1028</width>
+  <height>578</height>
+  <data>images\bg_snow.png</data>
 </background>
