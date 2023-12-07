@@ -36,6 +36,8 @@
     <sprites name="S_Purple_Man">
       <sprite>sprites\S_Purpleman_Walk</sprite>
       <sprite>sprites\S_Purpleman_Attack</sprite>
+      <sprite>sprites\S_Purpleman_Hurt1</sprite>
+      <sprite>sprites\S_Purpleman_Hurt2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -50,6 +52,12 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\O_Player</object>
+    <object>objects\O_Enemy</object>
+    <objects name="O_Enemy">
+      <object>objects\O_Badman</object>
+      <object>objects\O_Snowman</object>
+      <object>objects\O_Purpleman</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\R_main</room>
