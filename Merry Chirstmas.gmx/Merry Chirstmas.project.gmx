@@ -13,13 +13,6 @@
       <sprite>sprites\S_Player_Death</sprite>
       <sprite>sprites\S_Player_Actack</sprite>
     </sprites>
-    <sprites name="Box">
-      <sprite>sprites\S_Box_Hurt2</sprite>
-      <sprite>sprites\S_Box_Hurt1</sprite>
-      <sprite>sprites\S_Box_Walk</sprite>
-      <sprite>sprites\S_Box_Death</sprite>
-      <sprite>sprites\S_Box_Attack</sprite>
-    </sprites>
     <sprites name="S_Snowman">
       <sprite>sprites\S_Snowman_Walk</sprite>
       <sprite>sprites\S_Snowman_Death</sprite>
@@ -38,6 +31,12 @@
       <sprite>sprites\S_Purpleman_Attack</sprite>
       <sprite>sprites\S_Purpleman_Hurt1</sprite>
       <sprite>sprites\S_Purpleman_Hurt2</sprite>
+    </sprites>
+    <sprites name="S_Northern">
+      <sprite>sprites\S_Northern_Walk</sprite>
+      <sprite>sprites\S_Northern_Hurt1</sprite>
+      <sprite>sprites\S_Northern_Hurt2</sprite>
+      <sprite>sprites\S_Northern_Attack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

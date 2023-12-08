@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///INIT
 speed = 0;
-enum enermyStete {
+enum enemyState {
     walk,
     hurt
 }
