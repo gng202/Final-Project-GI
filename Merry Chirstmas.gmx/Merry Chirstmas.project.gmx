@@ -40,15 +40,14 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\Tile_set</background>
     <background>background\Bg_sky</background>
     <background>background\Bg_star</background>
-    <background>background\Bg_Cloud1</background>
-    <background>background\Bg_Cloud2</background>
-    <background>background\Bg_moutain</background>
-    <background>background\Bg_Ground</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Scr_snowmanwalk.gml</script>
+    <script>scripts\Scr_badmanwalk.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\O_Player</object>
     <object>objects\O_Enemy</object>
