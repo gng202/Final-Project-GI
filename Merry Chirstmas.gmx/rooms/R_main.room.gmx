@@ -52,6 +52,9 @@
   </views>
   <instances>
     <instance objName="O_Player" x="416" y="160" name="inst_91F38C4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="O_Badman" x="160" y="256" name="inst_8A1EF666" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="O_Purpleman" x="480" y="352" name="inst_DD29A2AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="O_Snowman" x="288" y="480" name="inst_E7A12309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

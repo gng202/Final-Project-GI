@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Scr_badmanwalk ();
+            <string>///ANIMATION WALK
+Scr_badmanwalk ();
 
 </string>
           </argument>

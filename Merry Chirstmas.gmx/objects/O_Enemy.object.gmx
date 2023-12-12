@@ -55,11 +55,14 @@ state = enemyState.walk;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (state) {
-    case (enemyState.walk):
-        Scr_snowmanwalk();
-        break;
-}
+            <string>///MOVEMENT
+theDitance = point_distance (x, y, O_Player.x, O_Player.y)
+
+//SET DIRECTION
+direction = point_direction (x, y, O_Player.x, O_Player.y)
+
+//SET SPEED
+speed = 2;
 </string>
           </argument>
         </arguments>
