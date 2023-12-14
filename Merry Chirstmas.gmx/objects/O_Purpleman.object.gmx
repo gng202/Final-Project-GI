@@ -53,7 +53,7 @@ speed = 4;
           <argument>
             <kind>1</kind>
             <string>///Attack
-if (global.attack = true) {
+if (attack = true) {
     speed = 0;
     sprite_index = S_Purpleman_Attack;
     image_speed = 4/5;

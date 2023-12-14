@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///INIT
 speed = 0;
+attack = false;
 enum enemyState {
     walk,
     hurt
@@ -62,11 +63,11 @@ direction = point_direction (x, y, O_Player.x, O_Player.y);
 
 if (theDistance &lt; 10) {
     speed = 0;
-    global.attack = true;
+    attack = true;
     exit
 }
 if not (theDistance &lt; 10) {
-    global.attack = false;
+    attack = false;
     exit
 }
 
