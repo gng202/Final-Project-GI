@@ -56,7 +56,10 @@ state = enemyState.walk;
             <kind>1</kind>
             <string>///MOVEMENT
 theDistance = point_distance (x, y, O_Player.x, O_Player.y);
-global.attack = false;
+
+//SET DIRECTION
+direction = point_direction (x, y, O_Player.x, O_Player.y);
+
 if (theDistance &lt; 10) {
     speed = 0;
     global.attack = true;
@@ -67,8 +70,7 @@ if not (theDistance &lt; 10) {
     exit
 }
 
-//SET DIRECTION
-direction = point_direction (x, y, O_Player.x, O_Player.y);
+
 </string>
           </argument>
         </arguments>
