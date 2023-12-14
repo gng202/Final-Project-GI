@@ -32,7 +32,6 @@ enum enemyState {
     hurt
 }
 state = enemyState.walk;
-
 </string>
           </argument>
         </arguments>
@@ -56,13 +55,17 @@ state = enemyState.walk;
           <argument>
             <kind>1</kind>
             <string>///MOVEMENT
-theDitance = point_distance (x, y, O_Player.x, O_Player.y)
+theDistance = point_distance (x, y, O_Player.x, O_Player.y);
+global.attack = false;
 if (theDistance &lt; 10) {
     speed = 0;
-    gol.attack = true;
+    global.attack = true;
     exit
 }
-gol.attack = false;
+if not (theDistance &lt; 10) {
+    global.attack = false;
+    exit
+}
 
 //SET DIRECTION
 direction = point_direction (x, y, O_Player.x, O_Player.y);
