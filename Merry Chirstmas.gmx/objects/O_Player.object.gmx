@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 4/5;
+            <string>///ANIMATION
+image_speed = 4/5;
 </string>
           </argument>
         </arguments>
@@ -59,7 +60,7 @@ if (theDistance &lt; 5) {
 direction = point_direction (x, y, mouse_x, mouse_y)
 
 //SET SPEED
-speed = 4;
+speed = 5;
 sprite_index = S_Player_Walk;
 </string>
           </argument>

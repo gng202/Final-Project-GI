@@ -45,9 +45,11 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\Scr_snowmanwalk.gml</script>
-    <script>scripts\Scr_badmanwalk.gml</script>
-    <script>scripts\Scr_purplemanwalk.gml</script>
+    <scripts name="Scr_Enymy">
+      <script>scripts\Scr_snowmanwalk.gml</script>
+      <script>scripts\Scr_badmanwalk.gml</script>
+      <script>scripts\Scr_purplemanwalk.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\O_Player</object>

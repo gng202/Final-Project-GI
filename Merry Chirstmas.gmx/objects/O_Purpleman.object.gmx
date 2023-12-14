@@ -8,7 +8,7 @@
   <parentName>O_Enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///ANIMATION WALK
-Scr_purplemanwalk ();
+            <string>///Attack
+if (gol.attack = true) {
+    speed = 0;
+    sprite_index = S_Purpleman_Attack;
+    image_speed = 4/5;
+    exit
+}
 </string>
           </argument>
         </arguments>

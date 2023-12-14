@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///ANIMATION WALK
+            <string>///WALK
 Scr_snowmanwalk ();
+
+//SET SPEED
+speed = 3;
 
 </string>
           </argument>
