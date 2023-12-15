@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///INIT
+attack = false;
 speed = 0;
 attack = false;
 enum enemyState {
