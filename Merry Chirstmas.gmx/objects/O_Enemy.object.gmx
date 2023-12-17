@@ -62,6 +62,7 @@ theDistance = point_distance (x, y, O_Player.x, O_Player.y);
 //SET DIRECTION
 direction = point_direction (x, y, O_Player.x, O_Player.y);
 
+//Attack
 if (theDistance &lt; 10) {
     speed = 0;
     attack = true;
@@ -71,8 +72,6 @@ if not (theDistance &lt; 10) {
     attack = false;
     exit
 }
-
-
 </string>
           </argument>
         </arguments>

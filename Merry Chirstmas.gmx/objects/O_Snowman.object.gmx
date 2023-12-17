@@ -31,6 +31,8 @@ Scr_snowmanwalk ();
 //SET SPEED
 speed = 3;
 
+//Atack
+attack = false;
 </string>
           </argument>
         </arguments>

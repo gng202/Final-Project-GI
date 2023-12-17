@@ -30,6 +30,9 @@ Scr_purplemanwalk ();
 
 //SET SPEED
 speed = 4;
+
+//Atack
+attack = false;
 </string>
           </argument>
         </arguments>
