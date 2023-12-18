@@ -59,7 +59,7 @@ attack = false;
 if (attack = true) {
     speed = 0;
     sprite_index = S_Badman_Attack;
-    image_speed = 4/5;
+    image_speed = 4/5
     exit
 }
 </string>
