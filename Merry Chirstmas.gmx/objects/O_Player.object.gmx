@@ -57,6 +57,12 @@ if (theDistance &lt; 5) {
     sprite_index = S_Player_Idle
     exit
 }   
+if (x &lt; mouse_x) {
+    image_xscale = 1
+} 
+else {
+    image_xscale = -1
+}
 //SET DIRECTION
 direction = point_direction (x, y, mouse_x, mouse_y)
 

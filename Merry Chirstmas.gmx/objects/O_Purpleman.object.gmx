@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///WALK
-Scr_purplemanwalk ();
+Scr_Purplemanwalk ();
 
 //SET SPEED
 speed = 4;

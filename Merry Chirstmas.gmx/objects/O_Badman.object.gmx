@@ -25,14 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///WALK
-Scr_badmanwalk ();
+            <string>///INIT
+
+//SET STATE
+state = enemyState.walk;
 
 //SET SPEED
-speed = 4;
+init_speed = 4
 
-//Atack
+//Attack
 attack = false;
+attackCounter = 0;
 </string>
           </argument>
         </arguments>
@@ -55,12 +58,13 @@ attack = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Attack
-if (attack = true) {
-    speed = 0;
-    sprite_index = S_Badman_Attack;
-    image_speed = 4/5
-    exit
+            <string>switch (state) {
+    case enemyState.walk:
+        Scr_Badman_Walk();
+        break;
+    case enemyState.attack:
+        Scr_Badman_Attack();
+        break;
 }
 </string>
           </argument>
