@@ -69,6 +69,9 @@
       <object>objects\O_Purpleman</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\Spawner</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\R_main</room>
   </rooms>

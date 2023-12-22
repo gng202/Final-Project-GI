@@ -31,7 +31,7 @@
 state = enemyState.walk;
 
 //SET SPEED
-init_speed = 4
+init_speed = 5
 
 //Attack
 attack = false;

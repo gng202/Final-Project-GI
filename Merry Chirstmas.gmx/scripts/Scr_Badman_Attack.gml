@@ -17,10 +17,10 @@ if (theDistance > 30) {
 attackCounter += 1;
 if (attackCounter == 6) {
     if (image_xscale > 0) {
-        instance_create(x + 3,y - 22, O_enemyDealDamge);
+        instance_create(x + 20, y, O_enemyDealDamge);
     }
     else if (image_xscale < 0) {
-        instance_create(x - 3, y - 22, O_enemyDealDamge);
+        instance_create(x - 20, y, O_enemyDealDamge);
     }
     attackCounter = 0;
 }

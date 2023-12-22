@@ -67,7 +67,7 @@ else {
 direction = point_direction (x, y, mouse_x, mouse_y)
 
 //SET SPEED
-speed = 5;
+speed = 7;
 sprite_index = S_Player_Walk;
 </string>
           </argument>
