@@ -9,9 +9,10 @@
     <sprites name="S Player">
       <sprite>sprites\S_Player_Idle</sprite>
       <sprite>sprites\S_Player_Walk</sprite>
-      <sprite>sprites\S_Player_Hurt</sprite>
+      <sprite>sprites\S_Player_Hurt1</sprite>
       <sprite>sprites\S_Player_Death</sprite>
       <sprite>sprites\S_Player_Actack</sprite>
+      <sprite>sprites\S_Player_Hurt2</sprite>
     </sprites>
     <sprites name="S_Snowman">
       <sprite>sprites\S_Snowman_Walk</sprite>
