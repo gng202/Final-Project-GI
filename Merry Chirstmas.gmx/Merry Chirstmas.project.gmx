@@ -11,7 +11,7 @@
       <sprite>sprites\S_Player_Walk</sprite>
       <sprite>sprites\S_Player_Hurt1</sprite>
       <sprite>sprites\S_Player_Death</sprite>
-      <sprite>sprites\S_Player_Actack</sprite>
+      <sprite>sprites\S_Player_Attack</sprite>
       <sprite>sprites\S_Player_Hurt2</sprite>
     </sprites>
     <sprites name="S_Snowman">
@@ -40,6 +40,10 @@
       <sprite>sprites\S_Northern_Attack</sprite>
     </sprites>
     <sprite>sprites\S_enemy_dealDamge</sprite>
+    <sprites name="Weapons">
+      <sprite>sprites\S_Bow</sprite>
+      <sprite>sprites\S_Arrow</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_sky</background>
@@ -69,6 +73,8 @@
       <object>objects\O_Snowman</object>
       <object>objects\O_Purpleman</object>
     </objects>
+    <object>objects\O_Bow</object>
+    <object>objects\O_Arrow</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Spawner</timeline>
