@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>range = 100
+count = 0
 </string>
           </argument>
         </arguments>
@@ -48,13 +49,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>distance = distance_to_point (global.nearest_x, global.nearest_y)
-if (global.nearest_x != noone and global.nearest_y != noone and distance &lt; range) {
-    count++
+            <string>if (global.nearest_x != noone and global.nearest_y != noone) {
+    image_angle = point_direction (x, y, global.nearest_x, global.nearest_y)
+    distance = distance_to_point (global.nearest_x, global.nearest_y)
+    if (distance &lt; range){
+        count++
+    }
     if (count == 10) {
         arrow = instance_create (x, y, O_Arrow)
         arrow.direction = point_direction (x, y, global.nearest_x, global.nearest_y)
         arrow.speed = 5;
+        arrow.image_angle = arrow.direction
         count = 0;
     }
 }
