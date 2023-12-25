@@ -189,8 +189,8 @@ sprite_index = S_Snowman_Hurt2;
           <argument>
             <kind>1</kind>
             <string>///Health Bar
+draw_self();
 draw_healthbar(x-10, y-40, x+10, y - 50, hp/hp_max *100, c_black, c_red, c_lime, 0, true, true);
-draw_sprite(sprite_index,image_index,x,y);
 </string>
           </argument>
         </arguments>

@@ -87,7 +87,9 @@ sprite_index = S_Badman_Hurt1;
             <string>///Check hp
 if (hp &lt;= 0) {
     instance_destroy();
-    instance_create (x, y, O_Dead);
+    instance_create (x, y, O_Badman_Dead);
+    global.nearest_x = noone;
+    global.nearest_y = noone;
 }
 </string>
           </argument>
@@ -189,8 +191,8 @@ hp = hp - 5;
           <argument>
             <kind>1</kind>
             <string>///Health Bar
+draw_self();
 draw_healthbar(x-10, y-40, x+10, y - 50, hp/hp_max *100, c_black, c_red, c_lime, 0, true, true);
-draw_sprite(sprite_index,image_index,x,y);
 </string>
           </argument>
         </arguments>

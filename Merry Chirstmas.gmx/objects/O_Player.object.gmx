@@ -223,8 +223,8 @@ sprite_index = S_Player_Hurt2;
           <argument>
             <kind>1</kind>
             <string>///Health Bar
+draw_self();
 draw_healthbar(x-30, y-70, x+30, y - 80, hp/hp_max *100, c_black, c_red, c_lime, 0, true, true);
-draw_sprite(sprite_index,image_index,x,y);
 </string>
           </argument>
         </arguments>
