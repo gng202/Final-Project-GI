@@ -30,6 +30,7 @@ image_speed = 4/5;
 global.attack = false;
 hp_max = 100;
 hp = 100;
+friendlyMode = false;
 global.nearest_x = noone;
 global.nearest_y = noone;
 instance_create (x, y, O_Bow)
@@ -140,13 +141,15 @@ sprite_index = S_Player_Walk;
           <argument>
             <kind>1</kind>
             <string>///Attack
-if (instance_exists(O_Enemy)) {
-    nearest = instance_nearest(x, y, O_Enemy)
-    global.nearest_x = nearest.x
-    global.nearest_y = nearest.y
-} else {
-    global.nearest_x = noone
-    global.nearest_y = noone
+if (friendlyMode == false) {
+    if (instance_exists(O_Enemy)) {
+        nearest = instance_nearest(x, y, O_Enemy);
+        global.nearest_x = nearest.x;
+        global.nearest_y = nearest.y;
+    } else {
+        global.nearest_x = noone;
+        global.nearest_y = noone;
+    }
 }
 </string>
           </argument>

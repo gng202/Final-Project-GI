@@ -24,7 +24,7 @@
     <sprites name="S_Badman">
       <sprite>sprites\S_Badman_Attack</sprite>
       <sprite>sprites\S_Badman_Walk</sprite>
-      <sprite>sprites\S_Banman_Hurt1</sprite>
+      <sprite>sprites\S_Badman_Hurt1</sprite>
       <sprite>sprites\S_Badman_Hurt2</sprite>
     </sprites>
     <sprites name="S_Purple_Man">
@@ -39,17 +39,17 @@
       <sprite>sprites\S_Northern_Hurt2</sprite>
       <sprite>sprites\S_Northern_Attack</sprite>
     </sprites>
-    <sprite>sprites\S_enemy_dealDamge</sprite>
-    <sprites name="Weapons">
-      <sprite>sprites\S_Bow</sprite>
-      <sprite>sprites\S_Arrow</sprite>
-    </sprites>
     <sprites name="UI">
       <sprite>sprites\S_Button_Play_Pressed</sprite>
       <sprite>sprites\S_Button_Play</sprite>
       <sprite>sprites\S_Title</sprite>
       <sprite>sprites\S_Button_Exit</sprite>
     </sprites>
+    <sprites name="Weapons">
+      <sprite>sprites\S_Bow</sprite>
+      <sprite>sprites\S_Arrow</sprite>
+    </sprites>
+    <sprite>sprites\S_enemy_dealDamge</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_sky</background>
@@ -73,6 +73,7 @@
   <objects name="objects">
     <object>objects\O_enemyDealDamge</object>
     <object>objects\O_Player</object>
+    <object>objects\O_Dead</object>
     <object>objects\O_Enemy</object>
     <objects name="O_Enemy">
       <object>objects\O_Badman</object>

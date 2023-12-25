@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="2" enumb="5">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,10 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Pressed
-if (mouse_check_button_pressed(mb_left)) {
-    room_goto_next();
-}
+            <string>///Init
+step = 0;
+pressed = false;
 </string>
           </argument>
         </arguments>
@@ -51,32 +50,19 @@ if (mouse_check_button_pressed(mb_left)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = S_Button_Play_Pressed;
+            <string>///Pressed 1
+step = step + 1;
+if (mouse_check_button_pressed(mb_left)) {
+    if (point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_height)) {
+        pressed = true;
+        step = 0;
+        sprite_index = S_Button_Play_Pressed;
+    }
+}
+if (step = 15 and pressed = true) {
+    room_goto(R_main)
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>15</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>5</string>
           </argument>
         </arguments>
       </action>
