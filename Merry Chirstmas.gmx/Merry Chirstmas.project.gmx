@@ -74,6 +74,8 @@
     <object>objects\O_enemyDealDamge</object>
     <object>objects\O_Player</object>
     <object>objects\O_Badman_Dead</object>
+    <object>objects\O_Purpleman_Dead</object>
+    <object>objects\O_Snowman_Dead</object>
     <object>objects\O_Enemy</object>
     <objects name="O_Enemy">
       <object>objects\O_Badman</object>

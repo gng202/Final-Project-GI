@@ -115,7 +115,7 @@ sprite_index = S_Snowman_Hurt2;
             <string>///Check hp
 if (hp &lt;= 0) {
     instance_destroy();
-    instance_create (x, y, O_Dead);
+    instance_create (x, y, O_Snowman_Dead);
     global.nearest_x = noone;
     global.nearest_y = noone;
 }

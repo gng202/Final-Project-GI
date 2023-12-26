@@ -87,7 +87,7 @@ sprite_index = S_Purpleman_Hurt2
             <string>///Check hp
 if (hp &lt;= 0) {
     instance_destroy();
-    instance_create (x, y, O_Dead);
+    instance_create (x, y, O_Purpleman_Dead);
     global.nearest_x = noone;
     global.nearest_y = noone;
 }

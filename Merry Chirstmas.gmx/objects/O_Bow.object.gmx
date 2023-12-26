@@ -55,16 +55,22 @@ count = 0;
     if (distance &lt; range){
         count++
     }
-    if (count == 3) {
+    if (count == 2) {
         arrow = instance_create (x, y, O_Arrow)
         arrow.direction = point_direction (x, y, global.nearest_x, global.nearest_y)
-        arrow.speed = 5;
+        arrow.speed = 10;
         arrow.image_angle = arrow.direction
         count = 0;
     }
 }
-x = O_Player.x + 5
-y = O_Player.y
+if (O_Player.image_xscale &lt; 0) {
+    x = O_Player.x - 5;
+    y = O_Player.y;
+}
+if (O_Player.image_xscale &gt; 0) {
+    x = O_Player.x + 5;
+    y = O_Player.y;
+}
 </string>
           </argument>
         </arguments>
