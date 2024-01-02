@@ -47,9 +47,18 @@
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\S_Bow</sprite>
-      <sprite>sprites\S_Arrow</sprite>
+      <sprite>sprites\S_Bow_Arrow</sprite>
+      <sprite>sprites\S_Cossbow</sprite>
+      <sprite>sprites\S_Cossbow_Arrow</sprite>
+      <sprite>sprites\S_Gun</sprite>
+      <sprite>sprites\S_Laser</sprite>
+      <sprite>sprites\S_Summon_Weapon</sprite>
     </sprites>
     <sprite>sprites\S_enemy_dealDamge</sprite>
+    <sprites name="S_Boss">
+      <sprite>sprites\S_Tank</sprite>
+      <sprite>sprites\S_Shot</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_sky</background>
@@ -82,20 +91,36 @@
       <object>objects\O_Snowman</object>
       <object>objects\O_Purpleman</object>
     </objects>
-    <object>objects\O_Bow</object>
-    <object>objects\O_Arrow</object>
     <objects name="UI">
       <object>objects\O_Title</object>
       <object>objects\O_Button_Play</object>
       <object>objects\O_Button_Exit</object>
+      <object>objects\O_Gun_Button</object>
+      <object>objects\O_Bow_Button</object>
+      <object>objects\O_Crossbow_Button</object>
     </objects>
+    <objects name="Weapon">
+      <object>objects\O_Laser</object>
+      <object>objects\O_Crossbow</object>
+      <object>objects\O_Gun</object>
+      <object>objects\O_Arrow</object>
+      <object>objects\O_Bow</object>
+      <object>objects\O_Crossbow_Arrow</object>
+    </objects>
+    <objects name="Boss">
+      <object>objects\O_Tank</object>
+      <object>objects\O_Tank_Shot</object>
+    </objects>
+    <object>objects\Weapon_Saver</object>
+    <object>objects\O_Summon_Weapon</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Spawner</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\R_Menu</room>
-    <room>rooms\R_main</room>
+    <room>rooms\R_Choose_Weapon</room>
+    <room>rooms\R_Main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

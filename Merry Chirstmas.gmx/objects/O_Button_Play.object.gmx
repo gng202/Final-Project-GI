@@ -60,7 +60,7 @@ if (mouse_check_button_pressed(mb_left)) {
     }
 }
 if (step = 15 and pressed = true) {
-    room_goto(R_main)
+    room_goto(R_Choose_Weapon)
 }
 </string>
           </argument>

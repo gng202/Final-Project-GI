@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Init
+global.summonWeapon = 0;
+summonWeapon = false;
+bossFighting = false;
+score = 0
 image_speed = 4/5;
 global.attack = false;
 hp_max = 100;
@@ -33,7 +37,15 @@ hp = 100;
 friendlyMode = false;
 global.nearest_x = noone;
 global.nearest_y = noone;
-instance_create (x, y, O_Bow)
+if (global.weaponChoose = 1) {
+    instance_create (x, y, O_Bow)
+}
+if (global.weaponChoose = 2) {
+    instance_create (x, y, O_Crossbow)
+}
+if (global.weaponChoose = 3) {
+    instance_create (x, y, O_Gun)
+}
 </string>
           </argument>
         </arguments>
@@ -120,6 +132,9 @@ sprite_index = S_Player_Walk;
           <argument>
             <kind>1</kind>
             <string>///Check hp
+if (hp &lt;= 0) {
+    
+}
 </string>
           </argument>
         </arguments>
@@ -155,6 +170,91 @@ if (friendlyMode == false) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Boss
+if (score % 100 == 0 and score != 0 and bossFighting = false) {
+    bossFighting = true;
+    instance_create(irandom_range(0, 800), irandom_range(0, 800), O_Tank)
+} else {
+    if (score % 100 != 0) {
+        bossFighting = false;
+    }
+}
+if (score &gt;= 100 and summonWeapon == false) {
+    temp = irandom_range(1,3);
+    instance_create(400, 400, O_Summon_Weapon);
+    while(temp == global.weaponChoose) {
+        temp = irandom_range(1,3);
+    }
+    global.summonWeapon = temp;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="O_Tank_Shot">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Hurt 1
+hp = hp - 10;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>2</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="O_enemyDealDamge">
       <action>
@@ -173,8 +273,8 @@ if (friendlyMode == false) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Hurt
-hp = hp - 0.2;
+            <string>///Hurt 1
+hp = hp - 5;
 sprite_index = S_Player_Hurt2;
 </string>
           </argument>
