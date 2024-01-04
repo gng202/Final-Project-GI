@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Sou_Boom</sound>
+    <sound>sound\Sou_BoomEnemyDead</sound>
+    <sound>sound\Sou_GunBeam</sound>
+    <sound>sound\Sou_Arrow</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="S Player">
       <sprite>sprites\S_Player_Idle</sprite>
@@ -56,7 +61,7 @@
     </sprites>
     <sprite>sprites\S_enemy_dealDamge</sprite>
     <sprites name="S_Boss">
-      <sprite>sprites\S_Tank</sprite>
+      <sprite>sprites\S_ArmorCar</sprite>
       <sprite>sprites\S_Shot</sprite>
     </sprites>
   </sprites>
@@ -108,7 +113,7 @@
       <object>objects\O_Crossbow_Arrow</object>
     </objects>
     <objects name="Boss">
-      <object>objects\O_Tank</object>
+      <object>objects\O_ArmorCar</object>
       <object>objects\O_Tank_Shot</object>
     </objects>
     <object>objects\Weapon_Saver</object>

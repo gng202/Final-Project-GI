@@ -189,19 +189,23 @@ if (friendlyMode == false) {
             <string>///Boss
 if (score % 100 == 0 and score != 0 and bossFighting = false) {
     bossFighting = true;
-    instance_create(irandom_range(0, 800), irandom_range(0, 800), O_Tank)
+    instance_create(irandom_range(0, 800), irandom_range(0, 800), O_ArmorCar)
 } else {
     if (score % 100 != 0) {
         bossFighting = false;
     }
 }
 if (score &gt;= 100 and summonWeapon == false) {
+    summonWeapon = true;
     temp = irandom_range(1,3);
     instance_create(400, 400, O_Summon_Weapon);
     while(temp == global.weaponChoose) {
         temp = irandom_range(1,3);
     }
     global.summonWeapon = temp;
+}
+if (!instance_exists(O_ArmorCar)) {
+    bossFighting = false;
 }
 </string>
           </argument>
@@ -301,6 +305,36 @@ sprite_index = S_Player_Hurt2;
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>703</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>1</kind>
+            <string>Score: </string>
           </argument>
         </arguments>
       </action>
