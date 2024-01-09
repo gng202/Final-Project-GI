@@ -49,6 +49,7 @@
       <sprite>sprites\S_Button_Play</sprite>
       <sprite>sprites\S_Title</sprite>
       <sprite>sprites\S_Button_Exit</sprite>
+      <sprite>sprites\S_Choose_Wp</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\S_Bow</sprite>
@@ -103,6 +104,7 @@
       <object>objects\O_Gun_Button</object>
       <object>objects\O_Bow_Button</object>
       <object>objects\O_Crossbow_Button</object>
+      <object>objects\O_Choose_Wp</object>
     </objects>
     <objects name="Weapon">
       <object>objects\O_Laser</object>
