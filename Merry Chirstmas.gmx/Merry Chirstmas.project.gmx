@@ -9,6 +9,8 @@
     <sound>sound\Sou_BoomEnemyDead</sound>
     <sound>sound\Sou_GunBeam</sound>
     <sound>sound\Sou_Arrow</sound>
+    <sound>sound\Sou_BonusHp</sound>
+    <sound>sound\Sou_WpBonus</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="S Player">
@@ -50,15 +52,25 @@
       <sprite>sprites\S_Title</sprite>
       <sprite>sprites\S_Button_Exit</sprite>
       <sprite>sprites\S_Choose_Wp</sprite>
+      <sprite>sprites\S_Game_Over</sprite>
+      <sprite>sprites\S_PlayAgain</sprite>
+      <sprite>sprites\S_PlayAgain_Pressed</sprite>
+      <sprite>sprites\S_Back_Menu</sprite>
+      <sprite>sprites\S_Trial</sprite>
+      <sprite>sprites\S_Trial_Pressed</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprite>sprites\S_Bow</sprite>
+      <sprite>sprites\S_Bow_Button</sprite>
       <sprite>sprites\S_Bow_Arrow</sprite>
       <sprite>sprites\S_Cossbow</sprite>
+      <sprite>sprites\S_CrossBow_Button</sprite>
       <sprite>sprites\S_Cossbow_Arrow</sprite>
       <sprite>sprites\S_Gun</sprite>
+      <sprite>sprites\S_Gun_Button</sprite>
       <sprite>sprites\S_Laser</sprite>
       <sprite>sprites\S_Summon_Weapon</sprite>
+      <sprite>sprites\S_BonusHp</sprite>
     </sprites>
     <sprite>sprites\S_enemy_dealDamge</sprite>
     <sprites name="S_Boss">
@@ -84,10 +96,33 @@
         <script>scripts\Scr_Snowman_Attack.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Trial">
+      <scripts name="Enemy">
+        <scripts name="Walk">
+          <script>scripts\Scr_Snowmanwalk_trial.gml</script>
+          <script>scripts\Scr_Badmanwalk_Trial.gml</script>
+          <script>scripts\Scr_Purplemanwalk_trial.gml</script>
+        </scripts>
+        <scripts name="Attack">
+          <script>scripts\Scr_Badmanattack_trial.gml</script>
+          <script>scripts\Scr_Purplemanattack_trial.gml</script>
+          <script>scripts\Scr_Snowmanattack_trial.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\Font_main</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\O_enemyDealDamge</object>
+    <objects name="Trial">
+      <object>objects\O_Trial_Player</object>
+      <objects name="Wp">
+        <object>objects\O_Bow_Trial</object>
+      </objects>
+    </objects>
     <object>objects\O_Player</object>
+    <object>objects\O_enemyDealDamge</object>
     <object>objects\O_Badman_Dead</object>
     <object>objects\O_Purpleman_Dead</object>
     <object>objects\O_Snowman_Dead</object>
@@ -99,12 +134,16 @@
     </objects>
     <objects name="UI">
       <object>objects\O_Title</object>
+      <object>objects\O_BackMenu</object>
       <object>objects\O_Button_Play</object>
+      <object>objects\O_PlayAgain</object>
+      <object>objects\O_Trial</object>
       <object>objects\O_Button_Exit</object>
       <object>objects\O_Gun_Button</object>
       <object>objects\O_Bow_Button</object>
       <object>objects\O_Crossbow_Button</object>
       <object>objects\O_Choose_Wp</object>
+      <object>objects\O_Game_Over</object>
     </objects>
     <objects name="Weapon">
       <object>objects\O_Laser</object>
@@ -113,21 +152,26 @@
       <object>objects\O_Arrow</object>
       <object>objects\O_Bow</object>
       <object>objects\O_Crossbow_Arrow</object>
+      <object>objects\O_Summon_Weapon</object>
+      <object>objects\O_BonusHp</object>
     </objects>
     <objects name="Boss">
       <object>objects\O_ArmorCar</object>
       <object>objects\O_Tank_Shot</object>
     </objects>
     <object>objects\Weapon_Saver</object>
-    <object>objects\O_Summon_Weapon</object>
+    <object>objects\O_Drawer</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Spawner</timeline>
+    <timeline>timelines\Trial</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\R_Menu</room>
+    <room>rooms\R_Trial</room>
     <room>rooms\R_Choose_Weapon</room>
     <room>rooms\R_Main</room>
+    <room>rooms\R_Game_Over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -8,18 +8,18 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>54</bbox_right>
-  <bbox_top>5</bbox_top>
-  <bbox_bottom>229</bbox_bottom>
+  <bbox_right>189</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>44</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>55</width>
-  <height>230</height>
+  <width>190</width>
+  <height>45</height>
   <frames>
-    <frame index="0">images\S_Bow_Button_0.png</frame>
+    <frame index="0">images\S_Trial_Pressed_0.png</frame>
   </frames>
 </sprite>

@@ -9,16 +9,16 @@
   </volume>
   <pan>0</pan>
   <bitRates>
-    <bitRate>192</bitRate>
+    <bitRate>128</bitRate>
   </bitRates>
   <sampleRates>
-    <sampleRate>44100</sampleRate>
+    <sampleRate>5512</sampleRate>
   </sampleRates>
   <types>
-    <type>0</type>
+    <type>2</type>
   </types>
   <bitDepths>
-    <bitDepth>16</bitDepth>
+    <bitDepth>8</bitDepth>
   </bitDepths>
   <preload>-1</preload>
   <data>Sou_GunBeam.mp3</data>

@@ -242,7 +242,7 @@ sprite_index = S_Snowman_Hurt2;
             <kind>1</kind>
             <string>///Hurt 1
 sprite_index = S_Snowman_Hurt2;
-hp = hp - 25;
+hp = hp - 10;
 </string>
           </argument>
         </arguments>

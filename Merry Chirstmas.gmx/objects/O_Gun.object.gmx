@@ -55,7 +55,7 @@ count = 0;
     if (distance &lt; range){
         count++
     }
-    if (count == 2) {
+    if (count == 3) {
         laser = instance_create (x, y, O_Laser)
         laser.direction = point_direction (x, y, global.nearest_x, global.nearest_y)
         laser.speed = 20;
