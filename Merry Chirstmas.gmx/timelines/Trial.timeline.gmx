@@ -19,7 +19,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Badman</object>
+            <object>O_Badman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -52,7 +52,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Purpleman</object>
+            <object>O_Pupleman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -80,7 +80,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Badman</object>
+            <object>O_Badman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -108,7 +108,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Badman</object>
+            <object>O_Badman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -136,7 +136,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Purpleman</object>
+            <object>O_Pupleman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -169,7 +169,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Snowman</object>
+            <object>O_Snowman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -197,7 +197,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Badman</object>
+            <object>O_Badman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -225,7 +225,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>O_Purpleman</object>
+            <object>O_Pupleman_Trial</object>
           </argument>
           <argument>
             <kind>0</kind>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>step = 0;
+            <string>pressed = false;
 </string>
           </argument>
         </arguments>
@@ -49,15 +49,12 @@
           <argument>
             <kind>1</kind>
             <string>///Pressed 1
-step = step + 1;
 if (mouse_check_button_pressed(mb_left)) {
     if (point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_height)) {
         pressed = true;
-        step = 0;
-        sprite_index = S_Button_Play_Pressed;
     }
 }
-if (step = 15 and pressed = true) {
+if (pressed == true) {
     room_goto(R_Menu);
 }
 </string>

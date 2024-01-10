@@ -100,7 +100,7 @@
       <scripts name="Enemy">
         <scripts name="Walk">
           <script>scripts\Scr_Snowmanwalk_trial.gml</script>
-          <script>scripts\Scr_Badmanwalk_Trial.gml</script>
+          <script>scripts\Scr_Badmanwalk_trial.gml</script>
           <script>scripts\Scr_Purplemanwalk_trial.gml</script>
         </scripts>
         <scripts name="Attack">
@@ -119,6 +119,12 @@
       <object>objects\O_Trial_Player</object>
       <objects name="Wp">
         <object>objects\O_Bow_Trial</object>
+      </objects>
+      <object>objects\object34</object>
+      <objects name="Enermy">
+        <object>objects\O_Badman_Trial</object>
+        <object>objects\O_Pupleman_Trial</object>
+        <object>objects\O_Snowman_Trial</object>
       </objects>
     </objects>
     <object>objects\O_Player</object>
