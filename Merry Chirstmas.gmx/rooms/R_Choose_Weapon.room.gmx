@@ -55,6 +55,10 @@
     <instance objName="O_Bow_Button" x="448" y="352" name="inst_52BC819C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-45"/>
     <instance objName="O_Gun_Button" x="480" y="448" name="inst_51900F9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
     <instance objName="O_Choose_Wp" x="400" y="160" name="inst_2D9EB765" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="O_Christmas_Tree" x="448" y="704" name="inst_01865E2B" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="O_Christmas_Tree" x="512" y="704" name="inst_2F2707ED" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="O_Christmas_Tree" x="512" y="672" name="inst_F534873C" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="O_Christmas_Tree" x="448" y="640" name="inst_17565062" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -40,12 +40,6 @@
       <sprite>sprites\S_Purpleman_Hurt1</sprite>
       <sprite>sprites\S_Purpleman_Hurt2</sprite>
     </sprites>
-    <sprites name="S_Northern">
-      <sprite>sprites\S_Northern_Walk</sprite>
-      <sprite>sprites\S_Northern_Hurt1</sprite>
-      <sprite>sprites\S_Northern_Hurt2</sprite>
-      <sprite>sprites\S_Northern_Attack</sprite>
-    </sprites>
     <sprites name="UI">
       <sprite>sprites\S_Button_Play_Pressed</sprite>
       <sprite>sprites\S_Button_Play</sprite>
@@ -72,11 +66,14 @@
       <sprite>sprites\S_Summon_Weapon</sprite>
       <sprite>sprites\S_BonusHp</sprite>
     </sprites>
-    <sprite>sprites\S_enemy_dealDamge</sprite>
     <sprites name="S_Boss">
       <sprite>sprites\S_ArmorCar</sprite>
       <sprite>sprites\S_Shot</sprite>
     </sprites>
+    <sprites name="Decoration">
+      <sprite>sprites\S_Christmas_Tree</sprite>
+    </sprites>
+    <sprite>sprites\S_enemy_dealDamge</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_sky</background>
@@ -120,7 +117,6 @@
       <objects name="Wp">
         <object>objects\O_Bow_Trial</object>
       </objects>
-      <object>objects\object34</object>
       <objects name="Enermy">
         <object>objects\O_Badman_Trial</object>
         <object>objects\O_Pupleman_Trial</object>
@@ -164,6 +160,9 @@
     <objects name="Boss">
       <object>objects\O_ArmorCar</object>
       <object>objects\O_Tank_Shot</object>
+    </objects>
+    <objects name="Decoration">
+      <object>objects\O_Christmas_Tree</object>
     </objects>
     <object>objects\Weapon_Saver</object>
     <object>objects\O_Drawer</object>
