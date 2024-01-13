@@ -11,6 +11,7 @@
     <sound>sound\Sou_Arrow</sound>
     <sound>sound\Sou_BonusHp</sound>
     <sound>sound\Sou_WpBonus</sound>
+    <sound>sound\Sou_Main</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="S Player">
